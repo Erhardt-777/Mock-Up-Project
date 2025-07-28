@@ -26,7 +26,6 @@ a {
 .nav-container {
   background-color: black;
   height: 4.5rem;
-  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +35,6 @@ a {
 /* Hamburger */
 .hamburger-menu {
   cursor: pointer;
-  /* display: block; */
 }
 
 .bar {
@@ -89,7 +87,6 @@ img{
 /* === Hero Section === */
 
 .hero_text{
-  /* background-color: white; */
   width: fit-content;
   background: rgba(255, 255, 255, 0.819);
   font-size: 1rem;
@@ -108,14 +105,11 @@ img{
   position: absolute;
   top: 5%;
   right: 0;
-  /* height: auto; */
 }
 
 .hero_text h1{
   margin: 0;
   text-transform: uppercase;
-
-  /* font-size: 4rem; */
 }
 
 .hero_text p{
@@ -135,19 +129,17 @@ img{
 
 /* === Best Sellers Section === */
 
-/* .best-sellers_container{
-  text-align: center;
-} */
-
 h2{
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: lighter;
+  margin-bottom: 0;
 }
 
-.best-seller_container{
+.best-seller_container,
+.shop-by-section__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -171,6 +163,26 @@ h2{
 
 .btn .button{
   font-size: 1.25rem;
+}
+
+/* === Shop by Room Section === */
+
+.shop-by-section__inner img{
+  filter: brightness(62%);
+  width: 200px;
+  border-radius: 50%;
+}
+
+.shop-by-section_items{
+  position: relative;
+}
+
+.shop-by-section__inner p{
+  width: 120px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-weight: 400;
 }
 
 @media (min-width: 600px) {
