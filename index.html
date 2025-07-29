@@ -49,7 +49,7 @@
         <!-- Hero Section -->
         <section>
             <div class="hero_container">
-                <img src="./images/banner-01-speaker-black.jpg" alt="Black Speaker" width="1920px">
+                <img src="./images/banner-01-speaker-black.jpg" alt="Black Speaker" width="100%">
                 <div class="hero_text">
                     <h1>Spotify, Pandora</h1>
                     <p>All your favorite music</p>
@@ -65,8 +65,8 @@
 
         <!-- Best Seller Section -->
 
-        <section>
-            <h2>Best Sellers</h2>
+        <section class="bs-section">
+            <h2 class="bs-section__h2">Best Sellers</h2>
 
             <div class="best-seller_container">
                 <div>
@@ -118,13 +118,55 @@
             </div>
         </section>
 
+        <!-- All New Section -->
+        <section>
+            <div class="all-new-section">
+                <img src="./images/bg-all-new-section.jpg" alt="White Speaker" width="100%">
+                <div class="all-new-section__inner">
+                    <h2>All New</h2>
+                    <p>The A5+ Wireless Speaker</p>
+                    <div class="button">
+                        <a href="#0" class="btn">Learn More</a>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+
+        <!-- Speaker Comparison Section -->
+        <section class="speaker-comparison">
+                <h2>Speaker Comparison</h2>
+                <table class="speakers-table">
+                    <thead>
+                        <tr>
+                            <th class="top-left">Model</th>
+                            <th><abbr title="Frequency Response">FR</abbr></th>
+                            <th class="top-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A5&#43;</td>
+                            <td>40<abbr title="Hertz">Hz</abbr> - 20<abbr title="kilohertz">kHz</abbr></td>
+                            <td><del>&dollar;999</del><span class="highlight-price">&dollar;899</span></td>
+                        </tr>
+                        <tr>
+                            <td>A3</td>
+                            <td>60<abbr title="Hertz">Hz</abbr> - 20<abbr title="kilohertz">kHz</abbr></td>
+                            <td>&dollar;799</td>
+                        </tr>
+                        <tr>
+                            <td class="bottom-left">A2</td>
+                            <td>80<abbr title="Hertz">Hz</abbr> - 20<abbr title="kilohertz">kHz</abbr></td>
+                            <td class="bottom-right">&dollar;599</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
 
     </main>
     <footer>
-
-        <p>Test footer</p>
-
     </footer>
     <script src="./scripts/script.js"></script>
 </body>

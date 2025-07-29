@@ -90,16 +90,6 @@ img{
   width: fit-content;
   background: rgba(255, 255, 255, 0.819);
   font-size: 1rem;
-}
-
-.hero_container{
-  max-width: 100vw;
-  position: relative;
-  height: auto;
-
-}
-
-.hero_text{
   color: rgb(98, 98, 98);
   padding: 1rem 1rem;
   position: absolute;
@@ -107,12 +97,19 @@ img{
   right: 0;
 }
 
-.hero_text h1{
+.hero_container {
+  max-width: 100vw;
+  position: relative;
+  height: auto;
+
+}
+
+.hero_text h1 {
   margin: 0;
   text-transform: uppercase;
 }
 
-.hero_text p{
+.hero_text p {
   margin: 0;
 }
 
@@ -129,7 +126,8 @@ img{
 
 /* === Best Sellers Section === */
 
-h2{
+.bs-section__h2,
+.shop-by-section__h2 {
   padding: 2rem 2rem;
   text-align: center;
   font-size: 3rem;
@@ -185,36 +183,191 @@ h2{
   font-weight: 400;
 }
 
+.shop-by-section__inner{
+  padding-bottom: 4rem;
+}
+
+/* === All New Section === */
+
+.all-new-section__inner{
+  width: fit-content;
+  background: rgba(0, 0, 0, 0.426);
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1rem;
+  position: absolute;
+  top: 8%;
+  right: 0;
+}
+
+.all-new-section {
+  max-width: 100vw;
+  position: relative;
+  height: auto;
+
+}
+
+.all-new-section__inner h2{
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+
+.all-new-section__inner p {
+  margin: 0;
+}
+
+.all-new-section__inner .button{
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.all-new-section__inner .button > .btn{
+  color: black;
+  font-weight: 300;
+}
+
+/* === Speaker Comparison Section === */
+
+abbr {
+  text-decoration: none;
+}
+
+.speaker-comparison h2 {
+  font-size: 1.75rem;
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.speaker-comparison {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  background-color: white;
+}
+
+.speakers-table {
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 0;
+  font-weight: 300;
+  border-radius: 15px;
+  --padding: 20px 0;
+  box-shadow: 1px 3px 7px #efefef;;
+}
+
+.speakers-table th {
+  background-color: #ff6600;
+  color: white;
+  padding: var(--padding);
+  text-transform: uppercase;
+}
+
+tr td:last-child{
+  font-weight: bold;
+}
+
+.speakers-table .highlight-price{
+  padding-left: 5px;
+  color: #ff6600;
+}
+
+/* Customize inside horizontal borders */
+.speakers-table td {
+  text-align: center;
+  padding: var(--padding);
+  --border: 1px solid #c3c3c3;
+  border-left: var(--border);
+  border-bottom: var(--border);
+}
+
+/* Table Head inside vertical borders */
+.speakers-table th:not(:last-child)
+ {
+  border-right: 1px solid #bbb;
+}
+
+/* Tabular Data right outside vertical borders */
+.speakers-table td:last-child{
+  border-right: var(--border);
+}
+
+/* td row zebra color effect */
+.speakers-table tr:nth-child(even){
+  background-color: #f6f6f6;
+}
+
+/* Rounded Corners */
+
+.speakers-table .top-left {
+  border-top-left-radius: 15px;
+}
+
+.speakers-table .bottom-left {
+  border-bottom-left-radius: 15px;
+}
+
+.speakers-table .top-right {
+  border-top-right-radius: 15px;
+}
+
+.speakers-table .bottom-right {
+  border-bottom-right-radius: 15px;
+}
+
 @media (min-width: 600px) {
-  .hero_text h1{
+  .hero_text h1, .all-new-section__inner h2{
     font-size: 2rem;
   }
   .hero_text{
     top: 15%;
-    right: 5%;
-    /* height: auto; */
+    right: 0;
+  }
+
+  /* === All New Section === */
+  .all-new-section__inner{
+    top: 15%;
+    right: 0;
+    width: 300px;
+    padding: 2rem 2rem;
+  }
+
+  /* === Speaker Comparison (Table) Section === */
+  .speaker-comparison {
+  padding-right: 5rem;
+  padding-left: 5rem;
   }
 
 }
 
 @media (min-width: 720px) {
-  .hero_text h1{
+  .hero_text h1, .all-new-section__inner h2{
     font-size: 2.5rem;
   }
-  .hero_text p{
+  .hero_text p, .all-new-section__inner p{
     font-size: 1.5rem;
   }
 
-  .hero_text{
+  .hero_text {
     padding: 2rem 2rem;
-    top: 15%;
-    right: 10%;
+    top: 20%;
+    right: 0;
     height: auto;
   }
-
-  /* .button{
-    font-size: 1rem;
-  } */
+  
+  /* === All New Section === */
+  .all-new-section__inner{
+    width: 400px;
+    padding: 2rem 2rem;
+  }
 
 }
 
@@ -254,11 +407,11 @@ h2{
   }
 
   /* === Hero Section == */
-  .hero_text h1{
+  .hero_text h1, .all-new-section__inner h2{
     font-size: 4rem;
   }
 
-  .hero_text p{
+  .hero_text p, .all-new-section__inner p{
     font-size: 3rem;
   }
 
@@ -269,131 +422,16 @@ h2{
     /* height: auto; */
   }
 
-  .button{
+  .button, .button .btn{
     font-size: 1rem;
   }
-}
 
-
-
-
-/* nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: white;
-  
-}
-
-.nav-container{
-  overflow: hidden;
-  background-color: black;
-  position: relative;
-  height: 4.5rem;
-  
-}
-
-.nav-container .top_logo{
-  display: flex;
-  justify-content: start ;
-  align-items: center;
-  height: 4.5rem;
-  margin-left: 1rem;
-}
-
-.nav-container .topnav_menu{
-  display: none;
-}
-
-.hamburger-menu{
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  
-}
-
-.bar{
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin: 7px auto;
-  background-color: white;
-}
- */
-
-
-
-/* Media Queries for different screens */
-
-
-  /* Tablet Screens */
-/* @media (min-width: 1200px){
-  body{
-    background-color: blueviolet;
+  /* === All New Section === */
+  .all-new-section__inner{
+    top: 25%;
+    right: 0%;
+    width: 700px;
+    padding: 3rem 3rem;
   }
 
-} */
-
-  /* Desktop Screens */
-/* @media (min-width: 1920px){
-  body{
-    background-color:aquamarine;
-  }
-
-
-} */
-
-
-/* 
-a{
-  text-decoration: none;
-  color: white;
 }
-nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: white;
-  
-}
-
-.nav-container{
-  padding: 1rem 0;
-  margin: 0 1.5rem; 
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-}
-
-
-.first-nav-bar ul{
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  gap: 3rem;
-}
-
-.second-nav-bar{
-  display: flex;
-  gap: 1rem;
-
-
-}
-
-.hamburger-menu{
-  display: none;
-  cursor: pointer;
-}
-
-.bar{
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin: 7px auto;
-  background-color: white;
-} */
