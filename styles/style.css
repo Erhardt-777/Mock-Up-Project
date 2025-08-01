@@ -249,7 +249,7 @@ abbr {
 
 .speaker-comparison {
   max-width: 75rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 4rem 1rem;
   background-color: white;
 }
@@ -358,6 +358,43 @@ tr td:last-child{
   font-size: smaller;
 }
 
+.responsive-img{
+  width: 100vw;
+  height: auto;
+}
+
+/* === In The News Section === */
+
+.in-the-news__inner{
+  width: 100%;
+  height: auto;
+  margin: 5rem auto;
+}
+
+.in-the-news__inner h2{
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.in-the-news__inner .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.container div{
+  width: 200px;
+}
+
+.container img{
+  display: block;
+  margin: 0 auto;
+}
 
 @media (min-width: 600px) {
   .hero_text h1,
