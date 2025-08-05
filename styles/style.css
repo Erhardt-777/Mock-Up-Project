@@ -413,7 +413,36 @@ tr td:last-child{
   text-align: center;
 }
 
+/* === Join Us Today Section === */
 
+.join-us-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color:rgba(44, 44, 44)
+}
+
+.join-us-wrapper h2{
+  margin: 0;
+  font-size: 2rem;
+}
+
+.join-us-wrapper .btn{
+  background-color: rgb(237, 112, 45);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0 0 0;
+  border-radius: 3px;
+}
+
+.join-us-wrapper #email-text-input{
+  width: 250px;
+  height: 35.50px;
+}
 
 @media (min-width: 600px) {
   .hero_text h1,
@@ -480,6 +509,31 @@ tr td:last-child{
     padding: 2rem 2rem;
   }
 
+  /* === Join Us Today Section === */
+
+  .join-us-wrapper{
+    height: 350px;
+    font-size: 18px;
+  }
+
+  .join-us-wrapper h2{
+    font-size: 3rem;
+  }
+
+  .join-us-wrapper .btn{
+    font-size: 1rem;
+    background-color: rgb(237, 112, 45);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+  }
+
+  .join-us-wrapper #email-text-input{
+    width: 350px;
+    height: 40px;
+  }
 }
 
 
