@@ -396,6 +396,25 @@ tr td:last-child{
   margin: 0 auto;
 }
 
+/* === This is Audio Engine Section === */
+.this-is-audio-wrapper{
+  background-image: url("../images/bg-this-is-audio-engine-section.jpg");
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.this-is-audio-heading{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 1px 0 1px white;
+  text-align: center;
+}
+
+
+
 @media (min-width: 600px) {
   .hero_text h1,
   .all-new-section__inner h2,
@@ -430,6 +449,13 @@ tr td:last-child{
     font-size: 20px;
     font-weight: 400;
   }
+
+  /* === This is Audio Engine Section === */
+
+  .this-is-audio-heading{
+  padding-top: 5px;
+  font-size: 3rem;
+}
 
 }
 
@@ -530,4 +556,11 @@ tr td:last-child{
     font-size: 25px;
     font-weight: 400;
   }
+
+  /* === This is Audio Engine Section === */
+
+  .this-is-audio-heading{
+  padding-top: 2rem;
+  font-size: 4.5rem;
+}
 }
